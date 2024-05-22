@@ -5,7 +5,7 @@ This is 3D model Uploader and Viewer. Created using MERN stack.
 ## Installation
 
 ```bash
-  * git clone 
+  * git clone https://github.com/sona1237/3D-model-new.git
   * cd 3D-Model-Viewer
   * cd client
   * npm i
