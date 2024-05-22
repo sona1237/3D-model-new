@@ -10,7 +10,7 @@
     "build": "cd server && npm install && npm run build"
   },
   "type": "module",
-  "author": "Ayush",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
