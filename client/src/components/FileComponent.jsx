@@ -60,12 +60,7 @@ export default function FileComponent() {
         <div className="mb-10 text-5xl font-extrabold text-gray-900">
           Welcome to 3D Models.
         </div>
-        <button
-  onClick={showAllModels}
-  className="justify-center mt-5 mb-2 px-4 py-2 border border-transparent text-lg font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300 ease-in-out shadow-lg"
->
-  Show All Models
-</button>
+        
 
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-700">
