@@ -5,12 +5,12 @@ import cors from "cors";
 import helmet from "helmet";
 import * as dotenv from "dotenv";
 import mongoose from "mongoose";
-
+import path from "path"
 dotenv.config();
 
 const PORT = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
-
+const __dirname= path.resolve()
 const app = express();
 
 app.use(helmet());
@@ -34,6 +34,12 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 app.use("/api", router);
+
+app.use(express.static(path.join(__dirname, '/client/dist')))
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname,'client','dist','index.html'))
+})
 app.listen(PORT, () => {
   console.info(`The App is listening at ${PORT}`);
 });
